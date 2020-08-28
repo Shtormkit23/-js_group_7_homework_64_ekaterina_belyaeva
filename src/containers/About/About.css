@@ -1,0 +1,85 @@
+.about{
+    width: 1100px;
+    position: relative;
+    margin: 20px auto 20px;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, rgba(252,236,252,0.3) 0%,rgba(255,228,225,0.5) 100%);
+    border: 2px solid mistyrose;
+    border-radius: 10px;
+}
+
+.about-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    margin: 0;
+    text-align: right;
+    color: MediumVioletRed;
+}
+
+.about p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+
+.bg-img-about {
+    opacity: 0.5;
+}
+
+.dish {
+    display: flex;
+}
+
+.dish:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+.dish-img {
+    display: block;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 20%;
+    border: 5px solid mistyrose;
+    height: 300px;
+}
+
+.dish p {
+    width: 35%;
+    padding-left: 12px;
+    text-align: center;
+}
+
+.dish-img img {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    width: 300px;
+    height: 300px;
+}
+
+.dish-img img:hover {
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.peonies{
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.author-img{
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 5px;
+    height: 200px;
+    margin-right: 5px;
+}
+
+.author{
+    display: flex;
+}
+
+
