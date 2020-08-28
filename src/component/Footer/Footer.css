@@ -1,0 +1,27 @@
+.footer {
+    background: mistyrose;
+    position: relative;
+}
+
+.footer-logo {
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer-logo p {
+    font-size: 45px;
+    margin: 4px 0 0 -28px;
+    color: FireBrick;
+    font-weight: bold;
+}
+
+.footer-inner {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-logo-img {
+    width: 70px;
+}
