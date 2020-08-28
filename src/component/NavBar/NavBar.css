@@ -1,0 +1,24 @@
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: 27px;
+}
+
+.nav-links li{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 35px;
+    color: FireBrick;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 40px;
+}
+
+.nav-links:active{
+    color: FireBrick;
+}
+
+
