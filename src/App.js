@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
+import Home from "./containers/Home/Home";
+import About from "./containers/About/About";
+import Contacts from "./containers/Contacts/Contacts";
+import Add from "./containers/Add/Add";
+import ReadMore from "./containers/ReadMore/ReadMore";
+import EditPost from "./containers/EditPost/EditPost";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Home}/>
+        <Route path="/about" component={About}/>
+          <Route path="/contacts" component={Contacts}/>
+          <Route path="/posts" component={Add}/>
+          <Route path="/post/:id" exact component={ReadMore}/>
+          <Route path="/post/:id/edit" component={EditPost} />
+        <Route render={() => <h1>404 Not Found</h1>}/>
+      </Switch>
+    </BrowserRouter>
+);
 
 export default App;
